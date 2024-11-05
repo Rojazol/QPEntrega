@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Premium - Autos Nuevos y Usados</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+     
+
+
+   <a href="#" class="scroll-top show-scroll-top" id="scroll-top">
+        <img src="flecha.png" alt="Arrow Up Icon">
+    </a>
+
+
+    <script>
+        
+    const scrollTopBtn = document.getElementById('scroll-top');
+
+  // Mostrar el botón al hacer scroll
+     
+   window.onscroll = function() {
+     
+       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+{
+                scrollTopBtn.style.display = "block";
+            } 
+else {
+                scrollTopBtn.style.display = "none";
+            }
+        };
+
+        // Al hacer clic, volver arriba
+      
+  scrollTopBtn.onclick = function(e) {
+          
+ e.preventDefault();
+          
+  window.scrollTo({top: 0, behavior: 'smooth'});
+      
+  };
+    </script>
+
+
+
+
+
+
+    <!-- Encabezado -->
+    <header>
+        <div class="logo"> 
+         <img src="marca1.png" alt="Quality Premium Marca">
+         </div>
+
+
+
+        <h1>   PREMIUM QUALITY </h1>
+      
+    </header>
+
+    <!-- Sección Principal -->
+    <main>
+        <section class="bienvenida">
+
+              <nav>
+            <ul>
+                <li><a href="#Catalogo">CATALOGO</a></li>
+                <li><a href="#Contacto">CONTACTO</a></li>
+                <li><a href="#Planes">PLANES</a></li>
+            </ul>
+        </nav>
+<div class="wrapper">
+<div class="search-container">
+    <input type="text" id="search" placeholder="Buscar...">
+    <img src="lupa.png" alt="Lupa" class="search-icon">
+</div>
+        </section>
+
+
+
+
+<!-- modificaciones -->
+  <main>
+        <section class="bienvenida">
+             <h2>Bienvenido a Premium Quality</h2>
+            <p>Encuentra los mejores autos nuevos y usados al mejor precio.</p>
+        </section>
+
+
+
+
+<div class="car-brands-container">
+        <div class="car-brand">
+            <a href="https://www.ejemplo.com">
+            <img src="logo1.jpg" alt="Marca 1">
+            </a>
+        </div>
+        <div class="car-brand">
+            <a href="https://www.ejemplo.com">
+            <img src="logo2.jpg" alt="Marca 2">
+            </a>
+        </div>
+        <div class="car-brand">
+            <a href="https://www.ejemplo.com">
+            <img src="logo3.jpg" alt="Marca 3">
+            </a>
+        </div>
+        <div class="car-brand">
+            <a href="https://www.ejemplo.com">
+            <img src="logo4.jpg" alt="Marca 4">
+            </a>
+        </div>
+        <div class="car-brand">
+             <a href="https://www.ejemplo.com">
+            <img src="logo5.jpg" alt="Marca 5">
+           </a>
+        </div>
+        <div class="car-brand">
+             <a href="https://www.ejemplo.com">
+            <img src="logo6.jpg" alt="Marca 6">
+           </a>
+        </div>
+    </div>
+ <!-- Nueva imagen grande -->
+  
+  <section class="imagen-promocional">
+    
+    <img src="imagen.png" alt="Promoción de Autos" style="width: 100%; height: auto;">
+    </section>
+ <!-- Sección de contenido principal -->
+        <main>
+            <section id="Catalogo">
+                <h2>CAT&Aacute;LOGO DE VEH&iacute;CULOS</h2>
+                <div class="categoria">
+                    <h3>AUTOS</h3>
+                    <p>Consulta nuestro cat&aacute;logo de autos 0km y usados.</p>
+                </div>
+                <div class="vehiculos">
+                    <div class="vehiculo">
+                        <img src="auto1.jpg" alt="Auto 1">
+                        <h4>Ford Fiesta 2019</h4>
+                        <p>Precio: $19.000.000</p>
+                    </div>
+                    <div class="vehiculo">
+                        <img src="auto2.jpg" alt="Auto 2">
+                        <h4>Chevrolet Onix 2023</h4>
+                        <p>Precio: $25.500.000</p>
+                    </div>
+                   </div>
+                <div class="vehiculos">
+                    <div class="vehiculo">
+                        <img src="auto3.jpg" alt="Auto 3">
+                        <h4>Ford Fiesta 2023</h4>
+                        <p>Precio: $20,000</p>
+                    </div>
+                    <div class="vehiculo">
+                        <img src="auto4.jpg" alt="Auto 4">
+                        <h4>Chevrolet Onix 2023</h4>
+                        <p>Precio: $22,500</p>
+                    </div>
+                      </div>
+                <div class="vehiculos">
+                    <div class="vehiculo">
+                        <img src="auto5.jpg" alt="Auto 5">
+                        <h4>Ford Fiesta 2023</h4>
+                        <p>Precio: $20,000</p>
+                    </div>
+                    <div class="vehiculo">
+                        <img src="auto6.jpg" alt="Auto 6">
+                        <h4>Chevrolet Onix 2023</h4>
+                        <p>Precio: $22,500</p>
+                    </div>
+
+
+
+                    <!-- Más autos aquí -->
+                </div>
+            </section>
+
+
+            <section id="Contacto">
+                <h2>CONSULTAR SOBRE UN VEH&Iacute;CULO O PLANES</h2>
+          
+               <form action="#">
+
+                    <label for="nombre">Nombre y apellido:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="Email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="Consulta">Consulta:</label>
+                    <textarea id="consulta" name="consulta" rows="4" required></textarea>
+
+                    <button type="submit">Enviar Consulta</button>
+                </form>
+            </section>
+
+
+
+
+            <section id="Planes">
+                <h2>PLANES DE OFERTAS Y FINANCIACION</h2>
+                <p>Conoce nuestras ofertas exclusivas en veh&iacute;culos 0km y usados.</p>
+                <p>Ofrecemos planes de financiaci&oacute;n flexibles y precios competitivos al contado.</p>
+
+                   <form action="#">
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="consulta">Consulta:</label>
+                    <textarea id="consulta" name="consulta" rows="4" required></textarea>
+
+                    <button type="submit">Enviar</button>
+                </form>
+            </section>
+        </main>
+    </div>
+
+
+
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer>
+      
+        <p>&copy; 2024 Premium Quality - Todos los derechos reservados</p>
+        <p>Contacto: info@qualitypremium.com</p>
+        
+    </footer>
+
+<script src="./js/script.js"></script>
+
+</body>
+</html>

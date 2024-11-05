@@ -1,0 +1,451 @@
+﻿/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 5;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    }
+
+.car-brands-container {
+   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; 
+  }
+
+.scroll-top {
+
+position: fixed;
+bottom: 2rem;
+right: -85rem;
+z-index: 2;
+display: none;
+transition: all 0.5s ease-in-out;
+}
+
+.show-scroll-top {
+  display: block;
+}
+
+.scroll-top img { 
+  width: 3em;
+}
+
+
+
+element.style {
+}
+.show-scroll-top {
+    display: block;
+}
+
+.scroll-top {
+    position: fixed;
+    bottom: 2rem;
+    right: -85rem;
+    z-index: 2;
+    display: none;
+    transition: all 0.5s ease-in-out;
+}
+
+
+#scroll-top {
+    position: fixed; /* Fija el botón en la ventana */
+    bottom: 20px; /* Espacio desde la parte inferior */
+    right: 20px; /* Espacio desde la izquierda */
+    background-color: transparent; /* Fondo transparente */
+   /*  border: none; */ /* Sin borde */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    z-index: 1000; /* Asegura que el botón esté por encima de otros elementos */
+    padding: 0; /* Sin padding para ajustar al tamaño de la imagen */
+    
+    width: auto; /* Ajusta automáticamente el ancho */
+    
+    height: auto; /* Ajusta automáticamente la altura */
+   
+    border-radius: 50%; /* Hace que el botón sea redondo, si es necesario */
+}
+
+#scroll-top  img {
+    width: 40px; /* Ajusta el tamaño de la imagen */
+    height: auto; /* Mantiene la proporción */
+    display: block; /* Asegura que no haya espacio debajo de la imagen */
+    background-color: transparent;
+    display: inline-block;
+    border-radius: 50%; /* Hace que el botón sea redondo, si es necesario */
+}
+
+#scroll-top :hover img {
+  opacity: 0.08;
+}
+
+
+
+/* Espacio entre los cuadros */
+
+.car-brand {
+  background-color: #fff;
+  border: 2px solid #ddd;
+  border-radius: 25px; /* Bordes redondeados */
+  padding: 20px;
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el cuadro */
+  transition: transform 0.2s; /* Animación suave al pasar el ratón */
+}
+
+.car-brand img {
+   width: 80px; /* Tamaño de la imagen */
+   height: auto;
+   margin-bottom: 10px;
+}
+
+.car-brand p { 
+ font-size: 14px;
+ color: #333;
+}
+
+.car-brand:hover {
+  transform: scale(1.05); 
+}
+
+
+
+/* Encabezado */
+
+header {
+    background-color: #ffffff; 
+    color: #336699;
+    padding: 20px 0;
+    text-align: center;
+    display: flex;
+    justify-content: none;
+    align-items: center;
+    padding: 10px;
+    height: 90px;
+    border radius: 3px;
+}
+
+header .logo img {
+  height: 90px;
+  padding: 10px;
+  text-align: center;
+  width: 90px;
+  display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ transition: transform 0.2s; 
+}
+
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+ 
+}
+
+nav ul li {
+    margin-left: 20px;
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+h1, h2, h3 {
+    margin-top: 0;
+}
+
+section {
+    margin: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.categoria {
+    margin-bottom: 20px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+form button {
+    background-color: #00509e;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #00509e;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+
+
+.search-container {
+    position: relative; /* Para posicionar la imagen en relación al input */
+    width: 300px; /* Ancho del contenedor del buscador */
+    margin-top: 10px; /* Mueve el buscador 50px hacia abajo */
+    margin-left: 920px; /* Mueve el buscador 20px hacia la derecha */
+    align-items: center;
+}
+
+
+
+input[type="text"] {
+    padding: 10px;
+    padding-left: 40px; /* Espacio para la imagen de la lupa */
+    padding-right: 10px; /* Espacio extra a la derecha */
+    width: 300px; /* Ajusta el ancho según tus necesidades */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-icon {
+    position: absolute;
+    left: 10px; /* Ajusta la posición a la izquierda */
+    top: 50%; /* Centra verticalmente */
+    transform: translateY(-50%); /* Ajuste fino para centrar */
+    width: 20px; /* Ajusta el tamaño de la imagen */
+    height: 20px; /* Ajusta el tamaño de la imagen */
+    pointer-events: none; /* Para que el clic en la imagen no interfiera con el input */
+}
+
+
+
+
+
+
+
+/* Sección de bienvenida */
+.bienvenida {
+    text-align: center;
+    padding: 50px;
+    background-color: #336699;
+    color: #ffffff;
+}
+
+.bienvenida h2 {
+    font-size: 36px;
+}
+
+
+/* modificaciones */
+.bienvenida {
+    text-align: center;
+    padding: 10px;
+    background-color: #336699;
+    color: #ffffff;
+}
+
+
+
+/* Sección agregar auto */
+
+.agregar-auto {
+    margin: 40px auto;
+    max-width: 600px;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.agregar-auto h2 {
+    text-align: center;
+    color: #003366;
+}
+
+.agregar-auto label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.agregar-auto input[type="text"], 
+.agregar-auto input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.agregar-auto button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #005599;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.agregar-auto button:hover {
+    background-color: #005599;
+}
+
+
+
+
+.imagen-promocional {
+    text-align: center; /* Centra la imagen */
+    margin: 20px 0; /* Añade márgenes superior e inferior */
+}
+
+.imagen-promocional img {
+    width: 100%; /* Asegura que la imagen ocupe el 100% del contenedor */
+    height: auto; /* Mantiene la proporción de la imagen */
+}
+
+
+
+
+
+/* Estilo para la sección del catálogo */
+#catalogo {
+    text-align: center;
+    padding: 40px;
+}
+
+/* Contenedor del catálogo que utiliza Flexbox */
+.catalogo-container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en varias filas si es necesario */
+    justify-content: space-around; /* Espacia los autos horizontalmente */
+    gap: 20px; /* Añade un espacio entre los autos */
+}
+
+
+/* Estilos para cada auto */
+.auto {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%; /* Cada auto ocupa el 30% del ancho del contenedor */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.auto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+/* Título de cada auto */
+.auto h3 {
+    color: #003366;
+    margin-top: 10px;
+}
+
+
+
+/* Descripción de cada auto */
+.auto p {
+    color: #555;
+}
+
+.vehiculos-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columnas */
+    gap: 20px; /* Espacio entre elementos */
+}
+
+.vehiculo {
+    background-color: white;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.vehiculo:hover {
+    transform: scale(1.05); /* Efecto al pasar el mouse */
+}
+
+.vehiculo img {
+    width: 30%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.vehiculo h3 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.vehiculo p {
+    font-size: 16px;
+    color: #333;
+}
+
+
+
+
+/* Pie de página */
+footer {
+    background-color: #000000;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer .arriba{
+  display: block;
+  width: 50px; 
+  height: 50px;
+  background-color: #e352dc;
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -25px;
+  border-radius: 50%;
+  line-height: 50px;
+  font-size: 18px;
+}
+
